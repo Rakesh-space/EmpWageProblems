@@ -6,26 +6,23 @@ using System.Threading.Tasks;
 
 namespace EmpWageProblem
 {
-    class UC7ComputeEmpWageMeth
+    class UC8EmpWageMultiComp
     {
         public const int IS_FULL_TIME = 1; //initialize the value of full time employee
         public const int IS_PART_TIME = 2; //initialize the value of part time employee
-        public const int Emp_Rate_Per_Hour = 20; //initialize the value of emplayoee rate per hours
-        public const int NUM_WORKING_DAY = 2; //initialize the value of No of working days
-        public const int MAX_HOUR_IN_MONTH = 10; //initialize the value of maximum hours int month
 
-        public static int uC7EmpWageProblem()
+        public static int uC8EmpWageProblem(string Company, int empRatePerhour, int NoofWorkingDays, int MaxHourPerMonth)
         {
 
             int totalemphour = 0;
             int emphrs = 0;
 
-            int totalWorkday = 0;
+            int totalW0rkingDay = 0;
             int empwage = 0;
-            while (totalemphour <= MAX_HOUR_IN_MONTH && totalWorkday < NUM_WORKING_DAY)
+            while (totalemphour <= MaxHourPerMonth && totalW0rkingDay < NoofWorkingDays)
             {
 
-                totalWorkday++;
+                totalW0rkingDay++;
                 // creating obj of Random Predefine class
                 Random random = new Random();
                 //using Next() to generaret random input out of 0,1
@@ -49,20 +46,22 @@ namespace EmpWageProblem
 
                 }
                 totalemphour += emphrs;
-                Console.WriteLine("Days#:" + totalWorkday);
+
+                //totalW0rkingDay += emphrs;//
+                Console.WriteLine("Days#:" + totalW0rkingDay);
                 Console.WriteLine("Emp hrs:" + emphrs);
             }
-
-            int totalEmpWage = totalemphour * Emp_Rate_Per_Hour;
+            int totalEmpWage = totalemphour * empRatePerhour;
             Console.WriteLine("Total Emp Wage :" + totalEmpWage);
             return totalEmpWage;
-
         }
         static void Main(string[] args)
         {
-            uC7EmpWageProblem();
+            uC8EmpWageProblem("DMart", 20, 2, 10);
+            uC8EmpWageProblem("Reliance", 10, 4, 20);
             Console.ReadLine();
         }
     }
+}
     
 }
