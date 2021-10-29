@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace EmpWageProblem
 {
-        class EmpWagBuilderArray
-        {
+        class EmpWagBuilderArray : IComputeEmpWage
+    {
 
             private int numofcompany = 0;
             private CompanyEmpWage[] companyEmpWageArray;

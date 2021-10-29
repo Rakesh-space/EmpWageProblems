@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace EmpWageProblem
 {
-        class CompanyEmpWage
-        {
+        class CompanyEmpWage : IComputeEmpWage
+    {
             public string company;
             public int EmpRatePerHrs;
             public int Num_Of_Working_Days;
