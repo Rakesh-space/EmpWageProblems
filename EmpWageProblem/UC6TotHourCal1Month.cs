@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EmpWageProblem
 {
-    class UC5CalWageMonth
+    class UC6TotHourCal1Month
     {
 
         public const int IS_FULL_TIME = 1; //initialize the value of full time employee
