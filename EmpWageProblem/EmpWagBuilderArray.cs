@@ -6,29 +6,28 @@ using System.Threading.Tasks;
 
 namespace EmpWageProblem
 {
-        class EmpWagBuilderArray : IComputeEmpWage
-    {
+        class EmpWageBuilderList : IComputeEmpWage
+        {
 
-            private int numofcompany = 0;
-            private CompanyEmpWage[] companyEmpWageArray;
 
-            public EmpWagBuilderArray()
+            private LinkedList<ComputeEmpWage> computeEmpWageList;           //creating Empty LinkedList 
+            public EmpWageBuilderList()
             {
-                this.companyEmpWageArray = new CompanyEmpWage[5];
+                this.computeEmpWageList = new LinkedList<ComputeEmpWage>();
             }
-
             public void addCompanyEmpWage(string company, int EmpRatePerHrs, int Num_Of_Working_Days, int WorkingHrs)
             {
-                companyEmpWageArray[this.numofcompany] = new CompanyEmpWage(company, EmpRatePerHrs, Num_Of_Working_Days, WorkingHrs);
-                numofcompany++;
+                this.computeEmpWageList = new ComputeEmpWage(company, EmpRatePerHrs, Num_Of_Working_Days, WorkingHrs);
             }
 
             public void ComputeEmpWage()
             {
-                for (int i = 0; i < numofcompany; i++)
+                int i = Convert.ToInt32(Console.ReadLine());
+                int noOfCompany = 4;
+                for (i = 0; i < noOfCompany; i++)
                 {
-                    companyEmpWageArray[i].setTotalEmpWage(this.empWageCompute(this.companyEmpWageArray[i]));
-                    Console.WriteLine(this.companyEmpWageArray[i].toString());
+                    computeEmpWageList.AddLast(this.computeEmpWageList.AddLast(i));
+                    Console.WriteLine(computeEmpWageList.ToString());
 
                 }
             }

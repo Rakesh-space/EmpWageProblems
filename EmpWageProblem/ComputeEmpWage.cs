@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace EmpWageProblem
 {
-        class CompanyEmpWage : IComputeEmpWage
+        class ComputeEmpWage : IComputeEmpWage
     {
             public string company;
             public int EmpRatePerHrs;
             public int Num_Of_Working_Days;
             public int WorkingHrs;
             public int totalEmpWage = 0;
-            public CompanyEmpWage(string company, int EmpRatePerHrs, int Num_Of_Working_Days, int WorkingHrs)
+            public ComputeEmpWage(string company, int EmpRatePerHrs, int Num_Of_Working_Days, int WorkingHrs)
             {
                 this.company = company;
                 this.EmpRatePerHrs = EmpRatePerHrs;
