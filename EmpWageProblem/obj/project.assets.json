@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rakesh\\source\\repos\\EmpWageProblem\\EmpWageProblem\\EmpWageProblem.csproj",
+      "projectUniqueName": "C:\\Users\\Rakesh\\source\\repos\\EmployeeWageProblem\\EmpWageProblems\\EmpWageProblem\\EmpWageProblem.csproj",
       "projectName": "EmpWageProblem",
-      "projectPath": "C:\\Users\\Rakesh\\source\\repos\\EmpWageProblem\\EmpWageProblem\\EmpWageProblem.csproj",
+      "projectPath": "C:\\Users\\Rakesh\\source\\repos\\EmployeeWageProblem\\EmpWageProblems\\EmpWageProblem\\EmpWageProblem.csproj",
       "packagesPath": "C:\\Users\\Rakesh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Rakesh\\source\\repos\\EmpWageProblem\\EmpWageProblem\\obj\\",
+      "outputPath": "C:\\Users\\Rakesh\\source\\repos\\EmployeeWageProblem\\EmpWageProblems\\EmpWageProblem\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Rakesh\\AppData\\Roaming\\NuGet\\NuGet.Config",

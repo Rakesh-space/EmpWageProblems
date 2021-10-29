@@ -1,0 +1,16 @@
+C:\Users\Rakesh\source\repos\EmployeeWageProblem\EmpWageProblems\EmpWageProblem\bin\Debug\net5.0\EmpWageProblem.exe
+C:\Users\Rakesh\source\repos\EmployeeWageProblem\EmpWageProblems\EmpWageProblem\bin\Debug\net5.0\EmpWageProblem.deps.json
+C:\Users\Rakesh\source\repos\EmployeeWageProblem\EmpWageProblems\EmpWageProblem\bin\Debug\net5.0\EmpWageProblem.runtimeconfig.json
+C:\Users\Rakesh\source\repos\EmployeeWageProblem\EmpWageProblems\EmpWageProblem\bin\Debug\net5.0\EmpWageProblem.runtimeconfig.dev.json
+C:\Users\Rakesh\source\repos\EmployeeWageProblem\EmpWageProblems\EmpWageProblem\bin\Debug\net5.0\EmpWageProblem.dll
+C:\Users\Rakesh\source\repos\EmployeeWageProblem\EmpWageProblems\EmpWageProblem\bin\Debug\net5.0\ref\EmpWageProblem.dll
+C:\Users\Rakesh\source\repos\EmployeeWageProblem\EmpWageProblems\EmpWageProblem\bin\Debug\net5.0\EmpWageProblem.pdb
+C:\Users\Rakesh\source\repos\EmployeeWageProblem\EmpWageProblems\EmpWageProblem\obj\Debug\net5.0\EmpWageProblem.csproj.AssemblyReference.cache
+C:\Users\Rakesh\source\repos\EmployeeWageProblem\EmpWageProblems\EmpWageProblem\obj\Debug\net5.0\EmpWageProblem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rakesh\source\repos\EmployeeWageProblem\EmpWageProblems\EmpWageProblem\obj\Debug\net5.0\EmpWageProblem.AssemblyInfoInputs.cache
+C:\Users\Rakesh\source\repos\EmployeeWageProblem\EmpWageProblems\EmpWageProblem\obj\Debug\net5.0\EmpWageProblem.AssemblyInfo.cs
+C:\Users\Rakesh\source\repos\EmployeeWageProblem\EmpWageProblems\EmpWageProblem\obj\Debug\net5.0\EmpWageProblem.csproj.CoreCompileInputs.cache
+C:\Users\Rakesh\source\repos\EmployeeWageProblem\EmpWageProblems\EmpWageProblem\obj\Debug\net5.0\EmpWageProblem.dll
+C:\Users\Rakesh\source\repos\EmployeeWageProblem\EmpWageProblems\EmpWageProblem\obj\Debug\net5.0\ref\EmpWageProblem.dll
+C:\Users\Rakesh\source\repos\EmployeeWageProblem\EmpWageProblems\EmpWageProblem\obj\Debug\net5.0\EmpWageProblem.pdb
+C:\Users\Rakesh\source\repos\EmployeeWageProblem\EmpWageProblems\EmpWageProblem\obj\Debug\net5.0\EmpWageProblem.genruntimeconfig.cache
