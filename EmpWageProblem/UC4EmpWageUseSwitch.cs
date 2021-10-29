@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace EmpWageProblem
 {
-    class UC3AddPartTimeWage
+    class UC4EmpWageUseSwitch
     {
+
 
         public const int IS_FULL_TIME = 1; //initialize the value of full time employee
         public const int IS_PART_TIME = 2; //initialize the value of part time employee
@@ -19,21 +20,22 @@ namespace EmpWageProblem
             // creating obj of Random Predefine class
             Random random = new Random();
             //using Next() to generaret random input out of 0,1
-            int empInput = random.Next(0, 3);
-            if (IS_FULL_TIME == empInput)   //here checked employee is full time or not
+            int empcheck = random.Next(0, 3);
+
+            switch (empcheck)
             {
-                Console.WriteLine("Employee is present");
-                emphrs = 8;
-            }
-            else if (IS_PART_TIME == empInput) //here checked employee is part time or not
-            {
-                Console.WriteLine("Employee is Part Time present");
-                emphrs = 4;
-            }
-            else
-            {
-                emphrs = 0;
-                Console.WriteLine(" Employee is Absent");
+                case IS_FULL_TIME:
+                    emphrs = 8;
+                    break;
+
+                case IS_PART_TIME:
+                    emphrs = 4;
+                    break;
+
+                default:
+                    emphrs = 0;
+                    break;
+
             }
             empwage = emphrs * Emp_Rate_Per_Hour;
             Console.WriteLine("empwagec:" + empwage);
