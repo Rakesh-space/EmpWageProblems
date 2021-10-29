@@ -8,20 +8,16 @@ namespace EmpWageProblem
 {
     class Program
     {
-        public static void Main(String[] args)
-        {
-            UC9TotWageEachCompany dMart = new UC9TotWageEachCompany("DMart", 20, 2, 10);
-            UC9TotWageEachCompany Vguard = new UC9TotWageEachCompany("Vguard", 10, 2, 10);
-            UC9TotWageEachCompany reliance = new UC9TotWageEachCompany("Reliancet", 10, 4, 20);
-            dMart.computeEmpWage();
-            Console.WriteLine(dMart.ToString());
-            Vguard.computeEmpWage();
-            Console.WriteLine(Vguard.ToString());
-            reliance.computeEmpWage();
-            Console.WriteLine(reliance.ToString());
+            static void main(String[] ar)
+            {
+                Console.WriteLine("Welcome to Employee Wage Computation!\n");
+                EmpWagBuilderArray emp = new EmpWagBuilderArray();
 
-            Console.ReadLine();
-
-        }
+                emp.addCompanyEmpWage("DMart", 20, 20, 60);
+                emp.addCompanyEmpWage("Reliance", 20, 15, 30);
+                emp.addCompanyEmpWage("VMware", 10, 20, 30);
+                emp.addCompanyEmpWage("Rolex", 15, 10, 60);
+                Console.ReadLine();
+            }
     }
 }
