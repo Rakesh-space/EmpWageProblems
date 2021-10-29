@@ -8,7 +8,7 @@ namespace EmpWageProblem
 {
     class IComputeEmpWage
     {
-        public abstract class IComputeEmpWage
+        public abstract void IComputeEmpWage()
         {
             public abstract void addCompanyEmpWage(string company, int empRatePerHour, int numOfWorkingDay, int maxHoursPerMonth);
             public abstract void computeEmpWage(string company, int empRatePerHour, int numOfWorkingDay, int maxHoursPerMonth);

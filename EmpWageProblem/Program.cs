@@ -11,7 +11,7 @@ namespace EmpWageProblem
         static void main(String[] ar)
         {
             Console.WriteLine("Welcome to Employee Wage Computation!\n");
-            EmpWageBuilderArray emp = new EmpWageBuilderArray();
+            EmpWageBuilderList emp = new EmpWageBuilderList();
 
             emp.addCompanyEmpWage("DMart", 20, 20, 60);
             emp.addCompanyEmpWage("Reliance", 20, 15, 30);
