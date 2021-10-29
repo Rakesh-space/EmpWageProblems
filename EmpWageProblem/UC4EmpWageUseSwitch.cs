@@ -8,8 +8,6 @@ namespace EmpWageProblem
 {
     class UC4EmpWageUseSwitch
     {
-
-
         public const int IS_FULL_TIME = 1; //initialize the value of full time employee
         public const int IS_PART_TIME = 2; //initialize the value of part time employee
         public const int Emp_Rate_Per_Hour = 20; //initialize the value of emplayoee rate per hours
