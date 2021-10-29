@@ -8,29 +8,29 @@ namespace EmpWageProblem
 {
     class EmpWageBuilderList : IComputeEmpWage
     {
-
-        private LinkedList<ComputeEmpWage> computeEmpWageList;
-        private int numofcompany = 0;
-        private ComputeEmpWage[] computeEmpWageArray;
+        int numofcompany = 0;
+        private LinkedList<ComputeEmpWage> computeEmpWageList;           //creating Empty LinkedList 
+        private Dictionary<string, ComputeEmpWage> computeToEmpWageMap;  //creating Empty Dictionary
 
         public EmpWageBuilderList()
         {
-            this.computeEmpWageArray = new ComputeEmpWage[5];
+            this.computeEmpWageList = new LinkedList<ComputeEmpWage>();
+            this.computeToEmpWageMap = new Dictionary<string, ComputeEmpWage>();
         }
-
         public void addCompanyEmpWage(string company, int EmpRatePerHrs, int Num_Of_Working_Days, int WorkingHrs)
         {
             ComputeEmpWage companyEmpWage = new ComputeEmpWage(company, EmpRatePerHrs, Num_Of_Working_Days, WorkingHrs);
             this.computeEmpWageList.AddLast(companyEmpWage);
-            computeEmpWageArray[this.numofcompany] = new ComputeEmpWage(company, EmpRatePerHrs, Num_Of_Working_Days, WorkingHrs);
+            this.computeToEmpWageMap.Add(company,companyEmpWage);
+            computeToEmpWageMap[company] = new ComputeEmpWage(company, EmpRatePerHrs, Num_Of_Working_Days, WorkingHrs);
             numofcompany++;
         }
 
         public void ComputeEmpWage()
         {
             int i = Convert.ToInt32(Console.ReadLine());
-            int noOfCompany = 4;
-            for (i = 0; i < noOfCompany; i++)
+            //int noOfCompany = 4;
+            for (i = 0; i < this.numofcompany; i++)
             {
                 computeEmpWageList.AddLast(this.computeEmpWageList.AddLast(i));
                 Console.WriteLine(computeEmpWageList.ToString());
@@ -85,7 +85,7 @@ namespace EmpWageProblem
         }
         public int getTotalWage(string company)
         {
-            return this.computeEmpWageArray[company].totalEmpWage;
+            return computeToEmpWageMap[company].totalEmpWage;
 
         }
     }

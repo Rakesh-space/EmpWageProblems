@@ -8,15 +8,13 @@ namespace EmpWageProblem
 {
     class Program
     {
-        static void main(String[] ar)
+        static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Employee Wage Computation!\n");
-            EmpWageBuilderList emp = new EmpWageBuilderList();
-
-            emp.addCompanyEmpWage("DMart", 20, 20, 60);
-            emp.addCompanyEmpWage("Reliance", 20, 15, 30);
-            emp.addCompanyEmpWage("VMware", 10, 20, 30);
-            emp.addCompanyEmpWage("Rolex", 15, 10, 60);
+            EmpWageBuilderList empWageBulder = new EmpWageBuilderList();
+            empWageBulder.addCompanyEmpWage("D-Mart", 20, 6, 20);
+            empWageBulder.addCompanyEmpWage("Reliance", 20, 6, 20);
+            empWageBulder.computeEmpWage("cloth-centre",8,15,8);
+            Console.WriteLine("Total Emp wage D-Mart company:" + ComputeEmpWage.getTotalWage("D-mart"));
             Console.ReadLine();
         }
     }
